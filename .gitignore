@@ -8,9 +8,16 @@ __pycache__/
 *.so
 .Python
 env/
+.venv/
 venv/
 *.egg-info/
 dist/
 build/
+instance/
+*.db
+*.sqlite3
+
+# IDE
 .vscode/
 .DS_Store
+pycache/
