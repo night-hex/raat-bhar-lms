@@ -2,6 +2,7 @@
 Database helper module.
 All SQL execution goes through execute_query() which uses psycopg2 directly.
 """
+import os
 import psycopg2
 from psycopg2.extras import RealDictCursor
 from config import Config
@@ -9,6 +10,10 @@ from config import Config
 
 def get_connection():
     """Create and return a new database connection."""
+    database_url = os.getenv('DATABASE_URL')
+    if database_url:
+        return psycopg2.connect(database_url)
+
     return psycopg2.connect(
         host=Config.DB_HOST,
         port=Config.DB_PORT,
