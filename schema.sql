@@ -1,5 +1,5 @@
     -- =============================================
-    -- College ERP — Learning Management System
+    -- RAAT BHAR LMS!! — Learning Management System
     -- PostgreSQL Database Schema (3NF)
     -- =============================================
 

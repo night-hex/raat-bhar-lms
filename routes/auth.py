@@ -74,6 +74,11 @@ def login():
     return render_template('auth/login.html')
 
 
+@auth_bp.route('/about')
+def about():
+    return render_template('about.html')
+
+
 @auth_bp.route('/logout')
 def logout():
     session.clear()

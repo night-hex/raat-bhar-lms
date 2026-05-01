@@ -1,4 +1,4 @@
-/* College ERP — Client-side helpers */
+/* RAAT BHAR LMS!! — Client-side helpers */
 
 // Sidebar toggle (mobile)
 function toggleSidebar() {

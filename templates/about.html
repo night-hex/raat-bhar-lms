@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RAAT BHAR LMS!! Team and Project Information">
+    <title>About Team - RAAT BHAR LMS!!</title>
+    <link rel="icon" href="{{ url_for('static', filename='erp_logo.png') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="about-page">
+    <div class="about-shell">
+        <div class="about-nav">
+            <a href="{{ url_for('auth.login') }}" class="btn btn-outline btn-sm"><i class="fas fa-arrow-left"></i> Back to Login</a>
+            <button class="btn btn-outline btn-sm theme-toggle-btn" title="Toggle Theme"><i class="fas fa-sun"></i> Toggle Theme</button>
+        </div>
+
+        <section class="about-hero">
+            <span class="about-kicker"><i class="fas fa-graduation-cap"></i> Semester Project</span>
+            <h1>RAAT BHAR LMS!!</h1>
+            <p>Semester Project - 2nd Semester, BZU</p>
+
+            <div class="about-meta">
+                <article class="about-meta-card">
+                    <div class="about-meta-label">Subject</div>
+                    <div class="about-meta-value">Database Management Systems (DBMS)</div>
+                </article>
+                <article class="about-meta-card">
+                    <div class="about-meta-label">Instructor</div>
+                    <div class="about-meta-value">Sir Israr Hanif</div>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <div class="team-head">
+                <h2>Team Members</h2>
+                <span class="team-count">16 Members</span>
+            </div>
+
+            <div class="team-grid">
+                <article class="team-member-card"><div class="team-member-name">Abdul Moiz</div><div class="team-member-roll">Roll No 2502</div></article>
+                <article class="team-member-card"><div class="team-member-name">Sameer Ali</div><div class="team-member-roll">Roll No 2531</div></article>
+                <article class="team-member-card"><div class="team-member-name">Khadija Ismail</div><div class="team-member-roll">Roll No 2503</div></article>
+                <article class="team-member-card"><div class="team-member-name">Taha Qureshi</div><div class="team-member-roll">Roll No 2529</div></article>
+                <article class="team-member-card"><div class="team-member-name">Eman Fatima</div><div class="team-member-roll">Roll No 2508</div></article>
+                <article class="team-member-card"><div class="team-member-name">Rida Ali</div><div class="team-member-roll">Roll No 2519</div></article>
+                <article class="team-member-card"><div class="team-member-name">Ahmad Raza</div><div class="team-member-roll">Roll No 2520</div></article>
+                <article class="team-member-card"><div class="team-member-name">Sohaib Ajmal</div><div class="team-member-roll">Roll No 2525</div></article>
+                <article class="team-member-card"><div class="team-member-name">Areesha Fatima</div><div class="team-member-roll">Roll No 2534</div></article>
+                <article class="team-member-card"><div class="team-member-name">Uzair Iqbal</div><div class="team-member-roll">Roll No 2539</div></article>
+                <article class="team-member-card"><div class="team-member-name">Hafsa Bint-e-Wajahat</div><div class="team-member-roll">Roll No 2544</div></article>
+                <article class="team-member-card"><div class="team-member-name">Abeeha Munir</div><div class="team-member-roll">Roll No 2516</div></article>
+                <article class="team-member-card"><div class="team-member-name">Abeeha Noor</div><div class="team-member-roll">Roll No 2536</div></article>
+                <article class="team-member-card"><div class="team-member-name">Rai Muhammad Arslan</div><div class="team-member-roll">Roll No 2506</div></article>
+                <article class="team-member-card"><div class="team-member-name">Umaima Sohail</div><div class="team-member-roll">Roll No 2540</div></article>
+                <article class="team-member-card"><div class="team-member-name">Nimra Farooq</div><div class="team-member-roll">Roll No 2522</div></article>
+            </div>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

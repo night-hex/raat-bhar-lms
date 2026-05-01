@@ -1,4 +1,4 @@
-"""College ERP — Learning Management System entry point."""
+"""RAAT BHAR LMS!! — Learning Management System entry point."""
 from flask import Flask, redirect, url_for
 from config import Config
 

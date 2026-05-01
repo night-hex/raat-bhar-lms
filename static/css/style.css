@@ -1,5 +1,5 @@
 /* =============================================
-   COLLEGE ERP — Premium Dark Theme
+   RAAT BHAR LMS!! — Premium Dark Theme
    ============================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
@@ -865,5 +865,153 @@ textarea { resize:vertical; min-height:80px; }
     font-size: 0.85rem;
 }
 .ss-no-results i { display: block; font-size: 1.5rem; margin-bottom: 6px; opacity: .4; }
+
+/* ================================================================
+   ABOUT PAGE
+   ================================================================ */
+
+.about-page {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 10% 0%, rgba(99, 102, 241, 0.12), transparent 38%),
+        radial-gradient(circle at 90% 100%, rgba(16, 185, 129, 0.1), transparent 42%),
+        var(--bg-body);
+    color: var(--text-primary);
+}
+
+.about-shell {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 80px 24px 48px;
+}
+
+.about-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about-hero {
+    background: linear-gradient(145deg, var(--bg-card), var(--bg-surface));
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 22px;
+}
+
+.about-kicker {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    color: var(--primary-light);
+    background: var(--primary-glow);
+    border: 1px solid rgba(99, 102, 241, 0.25);
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.about-hero h1 {
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+    line-height: 1.15;
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+}
+
+.about-hero p {
+    color: var(--text-secondary);
+    max-width: 800px;
+}
+
+.about-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.about-meta-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px;
+}
+
+.about-meta-label {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+}
+
+.about-meta-value {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.team-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0 12px;
+}
+
+.team-head h2 {
+    font-size: 1.15rem;
+    letter-spacing: -0.01em;
+}
+
+.team-count {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 14px;
+}
+
+.team-member-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.team-member-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--border-light);
+    box-shadow: var(--shadow-sm);
+}
+
+.team-member-name {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--text-primary);
+}
+
+.team-member-roll {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+@media(max-width:768px) {
+    .about-shell {
+        padding-top: 72px;
+    }
+
+    .about-nav {
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+}
 
 
