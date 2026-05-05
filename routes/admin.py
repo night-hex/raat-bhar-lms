@@ -639,3 +639,20 @@ def delete_fee(fee_id):
     except Exception as e:
         flash(f'Cannot delete fee: {e}', 'danger')
     return redirect(url_for('admin.manage_fees'))
+
+@admin_bp.route('/fix-db')
+def fix_db():
+    from models.db import execute_query
+    queries = [
+        "SELECT setval('users_user_id_seq', (SELECT COALESCE(MAX(user_id), 1) FROM users));",
+        "SELECT setval('students_student_id_seq', (SELECT COALESCE(MAX(student_id), 1) FROM students));",
+        "SELECT setval('teachers_teacher_id_seq', (SELECT COALESCE(MAX(teacher_id), 1) FROM teachers));"
+    ]
+    for q in queries:
+        try:
+            execute_query(q)
+        except Exception as e:
+            print(f"Error fixing sequence: {e}")
+    
+    return "Database fixed successfully! You can now create new users."
+
